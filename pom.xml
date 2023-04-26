@@ -70,6 +70,23 @@
     </dependency>
     
   </dependencies>
+	
+<reporting>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>4.0</version>
+            <configuration>
+                <rulesets>
+                    <ruleset>/rulesets/basic.xml</ruleset>
+                </rulesets>
+            </configuration>
+        </plugin>
+    </plugins>
+</reporting>  
+
+
   
   <build>
     <finalName>studentdemo</finalName>
