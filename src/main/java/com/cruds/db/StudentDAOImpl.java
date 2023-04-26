@@ -20,7 +20,7 @@ public class StudentDAOImpl implements StudentDAO {
 		Session session = sf.openSession();
 		session.beginTransaction();
 		session.save(s);
-		System.out.println(s + ");
+		System.out.println(s + "");
 		session.getTransaction().commit();
 		session.close();
 
