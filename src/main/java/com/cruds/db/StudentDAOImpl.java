@@ -11,6 +11,9 @@ import com.cruds.entity.Student;
 
 @Repository   // if annotation is not used here autowired(bean) will not be recognized
 public class StudentDAOImpl implements StudentDAO {
+	
+	
+	private final String msg = "Hello RCB";
 
 	@Autowired
 	private SessionFactory sf;
