@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class Student{
 	
 	
-	Jenkins PMD check = 10;
+	 int PMD = 10;
 	
 	@Id
 	private int rollno;
