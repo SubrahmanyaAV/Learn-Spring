@@ -20,6 +20,7 @@ public class StudentDAOImpl implements StudentDAO {
 		Session session = sf.openSession();
 		session.beginTransaction();
 		session.save(s);
+		System.out.println(s + ");
 		session.getTransaction().commit();
 		session.close();
 
@@ -36,7 +37,7 @@ public class StudentDAOImpl implements StudentDAO {
 	public Student edit(int rollno) {
 
 		Session session = sf.openSession();
-		String hql = "from Student b where rollno = ? ";
+		String hql = "from Student b where b.rollno = ? ";
 
 		List<Student> list = session.createQuery(hql).setInteger(0, rollno).list();
 
