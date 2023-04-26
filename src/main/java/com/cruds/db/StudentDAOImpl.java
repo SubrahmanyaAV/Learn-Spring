@@ -36,7 +36,7 @@ public class StudentDAOImpl implements StudentDAO {
 	public Student edit(int rollno) {
 
 		Session session = sf.openSession();
-		String hql = "from Student b where b.rollno = ? ";
+		String hql = "from Student b where rollno = ? ";
 
 		List<Student> list = session.createQuery(hql).setInteger(0, rollno).list();
 
