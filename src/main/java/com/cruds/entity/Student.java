@@ -9,6 +9,9 @@ import javax.persistence.Table;
 @Table(name="student")
 public class Student{
 	
+	
+	Jenkins PMD check = 10;
+	
 	@Id
 	private int rollno;
 	@Column
