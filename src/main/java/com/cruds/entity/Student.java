@@ -12,6 +12,7 @@ public class Student{
 	
 	 int PMD = 10;
 	
+	
 	@Id
 	private int rollno;
 	@Column
