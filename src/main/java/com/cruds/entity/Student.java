@@ -10,7 +10,8 @@ import javax.persistence.Table;
 public class Student{
 	
 	
-	 int PMD = 10;
+	int PMD = 10;
+	String checkStyle = "bugs";
 	
 	
 	@Id
